@@ -1,8 +1,9 @@
 export default  class OrderModel {
-    constructor(o_id,c_id, i_code, quantity, total) {
+    constructor(o_id,c_id, i_code,description, quantity, total) {
         this._o_id = o_id;
         this._c_id = c_id;
         this._i_code = i_code;
+        this._description = description;
         this._quantity = quantity;
         this._total = total;
     }
@@ -44,5 +45,13 @@ export default  class OrderModel {
 
     set total(value) {
         this._total = value;
+    }
+
+    get description() {
+        return this._description;
+    }
+
+    set description(value) {
+        this._description = value;
     }
 }

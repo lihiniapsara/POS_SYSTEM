@@ -4,6 +4,7 @@ import CartModel from "../model/CartModel.js";
 
 let itemindex ;
 let finaltotal = 0;
+let c_id;
 
 $(document).ready(function () {
 
@@ -80,6 +81,7 @@ $("#addcart").on("click", function () {
     let qtyOnHand = parseInt($("#qtyOnHand").val());
     let qty = parseInt($("#quantity").val());
     let tot = unitPrice * qty;
+    c_id = $("#selectCustomer").val();
 
     if (qty>qtyOnHand){
         alert("Not enough stock");
@@ -115,8 +117,9 @@ $("#placeOrder").on().click(function () {
         let unitPrice = parseFloat($(this).find("td").eq(2).text());
         let qty = parseInt($(this).find("td").eq(3).text());
         let tot = parseFloat($(this).find("td").eq(4).text());
-        let orderdata = new OrderModel(order_array.length+1, description, unitPrice, qty, tot);
+        let orderdata = new OrderModel(order_array.length+1,c_id, i_code, description, qty, tot);
         order_array.push(orderdata);
+        c_id=null
     })
 
     $("#cartTableBody").empty();
@@ -126,4 +129,12 @@ $("#placeOrder").on().click(function () {
     cleanCartForm()
     cart_array.splice(0,cart_array.length)
     console.log(order_array)
+
+    Swal.fire({
+        position: "succ",
+        icon: 'success',
+        title: 'Order Placed Successfully',
+        showConfirmButton: false,
+        timer: 1500
+    })
 })
