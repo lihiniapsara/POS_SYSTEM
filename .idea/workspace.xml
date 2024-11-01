@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edc04950-42c5-4ffc-b2d9-202100f73917" name="Changes" comment="pos done">
-      <change afterPath="$PROJECT_DIR$/.idea/controller/OrderDetailController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/controller/OrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/controller/OrderController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/model/OrderModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/model/OrderModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -69,7 +66,7 @@
       <updated>1730360239316</updated>
       <workItem from="1730360240738" duration="1634000" />
       <workItem from="1730365436617" duration="1825000" />
-      <workItem from="1730367305469" duration="2754000" />
+      <workItem from="1730367305469" duration="5254000" />
     </task>
     <task id="LOCAL-00001" summary="pos done">
       <option name="closed" value="true" />
@@ -79,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730362061365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pos done">
+      <option name="closed" value="true" />
+      <created>1730370420701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730370420701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

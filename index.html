@@ -18,10 +18,6 @@
         color: white !important ;
     }
 
-    .purchase-button{
-        width: max-content;
-        margin: 0 auto
-    }
     .navbar {
         background-color: black;
     }
@@ -49,7 +45,7 @@
 
     }
     .nav-item {
-        color: white;
+        color: white;!important;
     }
     .dashboard {
         background-color: #1A3C6B;
@@ -124,28 +120,31 @@
 </nav>
 
 <div id="dashboard-section" class="dashboard">
-    <h1>Dash Board</h1>
+    <h1>Dashboard</h1>
     <div class="div-gap1">
         <a href="#customer-section" class="btn btn-custom">
-            <br>
             <i class="fas fa-user"></i>
             Customer
         </a>
 
         <a href="#item-section" class="btn btn-custom">
-            <br>
             <i class="fas fa-box"></i>
             Item
         </a>
     </div>
+
     <div class="div-gap2">
         <a href="#order-section" class="btn btn-custom">
             <i class="fas fa-shopping-cart"></i>
             Place Order
         </a>
+
+        <a href="#orderdetail-section" class="btn btn-custom">
+            <i class="fas fa-receipt"></i>
+            Order Detail
+        </a>
     </div>
 </div>
-
 <!--Customer Form-->
 <div class="container mt-5" id="customer-section">
     <h1><i>Customer</i></h1>
@@ -521,6 +520,7 @@
     order_section.style.display="none"
     orderdetail_section.style.display="none"
 
+
     customer_nav.addEventListener('click',function (){
         //dashboar ekath ganna oni
         console.log("customer clicked")
@@ -563,6 +563,7 @@
         item_section.style.display="none"
         order_section.style.display="none"
         orderdetail_section.style.display="none"
+
     })
 </script>
 
